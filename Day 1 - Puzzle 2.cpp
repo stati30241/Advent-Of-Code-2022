@@ -6,6 +6,8 @@
 
 int main() {
 	std::ifstream ifs{ "input.txt " };
+	if (!ifs.is_open()) return -1;
+	
 	std::vector<int> calories = { 0 };
 	for (std::string str = ""; std::getline(ifs, str); ) {
 		if (str == "") calories.push_back(0);
