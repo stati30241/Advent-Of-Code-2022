@@ -23,9 +23,9 @@ int main() {
 	int numVisible = 0;
 	for (size_t i = 0; i < height; ++i) {
 		for (size_t j = 0; j < width; ++j) {
-			// Yes, I know going there is probably a better way to do this
-			// than by doing it direction by direction but its 11pm and I 
-			// should asleep right now
+			// Yes, I know there is probably a better way to do this than
+			// by doing it direction by direction but its 11pm and I should
+			// asleep right now
 			bool visibleN = true, visibleS = true, visibleW = true, visibleE = true;
 
 			// Checks for visibility from north
